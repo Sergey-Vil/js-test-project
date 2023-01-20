@@ -1,0 +1,190 @@
+.section-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.pagination-container {
+  width: 374px;
+  grid-gap: 10px;
+  display: contents;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    padding: 40px 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 50px 0 60px 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+}
+.pagination-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.333;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.points-left,
+.points-right {
+  width: 12px;
+}
+
+.pagination-button {
+  border: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.333;
+}
+
+.pagination--current,
+.uk-active {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  // background-color: $secondary-background-color;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  stroke: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// .arrow-left {
+//   background-image: url(../images/icons/arrow-left.svg);
+// }
+
+// .arrow-right {
+//   background-image: url(../images/icons/arrow-right.svg);
+// }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// :root {
+//   --main-text-color: #000000;
+//   --second-text-color: #8c8c8c;
+//   --dark-text-color: #545454;
+//   --white-text-color: #ffffff;
+//   --header-bg-color: rgba(0, 0, 0, 0.56);
+//   --accent-color: #ff6b08;
+//   --hover-animation: 300ms cubic-bezier(0.38, 0.53, 0.8, 0.71);
+//   --second-white-color: #f7f7f7;
+//   --second-dark-bg-color: #1a1818;
+//   --main-dark-bg-color: #383838;
+// }
+
+// .tui-pagination {
+//   &.custom-tui-pagination {
+//     // @include flexcenter();
+
+//     margin: 0;
+//     height: 40px;
+//     margin-top: 0;
+//     margin-top: 40px;
+
+//     @media screen and (min-width: 768px) {
+//       margin-top: 60px;
+//     }
+
+//     .tui-page-btn {
+//       // @include flexcenter();
+
+//       height: 100%;
+//       font-size: 12px;
+//       line-height: 16px;
+//       font-weight: 500;
+//       border-radius: 5px;
+//       border: 0;
+//       color: var(--main-text-color);
+//       min-width: 40px;
+//       margin-right: 0;
+//       margin-left: 0;
+
+//       &.tui-is-selected {
+//         background: var(--accent-color);
+//         border-left-color: var(--accent-color);
+//         border-right-color: var(--accent-color);
+//       }
+
+//       &.tui-prev,
+//       &.tui-next {
+//         background-color: var(--second-white-color);
+//       }
+//     }
+
+//     .tui-is-disabled {
+//       .tui-ico-prev,
+//       .tui-ico-next {
+//         background-position: 0 0;
+//       }
+//     }
+
+//     .tui-ico-prev,
+//     .tui-ico-next {
+//       // background: url(../images/svg/arrow.svg) no-repeat 0 0;
+//       width: 16px;
+//       height: 16px;
+//     }
+
+//     .tui-ico-prev {
+//       transform: rotate(180deg);
+//     }
+
+//     strong {
+//       background: transparent;
+//     }
+
+//     .tui-last,
+//     .tui-first {
+//       display: none;
+//     }
+//   }
+// }
+//darkmode
+// body.dark__theme #pagination {
+//   .tui-page-btn:hover,
+//   .tui-page-btn:focus {
+//     background-color: #9d9c9c38;
+//     color: var(--white-text-color);
+//   }
+//   .tui-next,
+//   .tui-prev {
+//     background-color: rgb(198, 198, 198);
+//   }
+//   a {
+//     color: var(--second-text-color);
+//   }
+//   .tui-is-selected {
+//     font-weight: 900;
+//   }
+// }
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// refs.btnfirstEl.classList.remove(last - button);
+// refs.pointsLeftEl.classList.remove(arrow - right);
+// refs.btnLastEl.classList.remove(arrow - left);
+// refs.pointsRightEl.classList.remove(first - button);
